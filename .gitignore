@@ -2,3 +2,4 @@ target/
 .settings
 .classpath
 .project
+src/main/webapp/WEB-INF/appengine-generated/datastore-indexes-auto.xml
