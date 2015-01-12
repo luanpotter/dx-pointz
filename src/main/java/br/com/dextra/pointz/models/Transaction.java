@@ -5,6 +5,8 @@ import io.yawp.repository.annotations.Endpoint;
 import io.yawp.repository.annotations.Id;
 import io.yawp.repository.annotations.Index;
 
+import java.util.Date;
+
 @Endpoint(path = "/transactions")
 public class Transaction {
 
@@ -15,6 +17,8 @@ public class Transaction {
 	private IdRef<Person> personId;
 
 	private TransactionType type;
+	private Date date;
+	private String reference;
 
 	public IdRef<Person> getPerson() {
 		return personId;
@@ -30,5 +34,13 @@ public class Transaction {
 
 	public int getPointz() {
 		return type.getPointz();
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public String getReference() {
+		return reference;
 	}
 }
