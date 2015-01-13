@@ -24,6 +24,7 @@ public class PersonWithPointzTransformer extends Transformer<Person> {
 		}
 	}
 
+	@Override
 	public PersonWithPointz defaults(Person person) {
 		return new PersonWithPointz(person);
 	}
