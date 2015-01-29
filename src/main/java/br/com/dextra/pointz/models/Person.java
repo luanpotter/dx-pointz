@@ -10,6 +10,7 @@ public class Person {
 	@Id
 	private IdRef<Person> id;
 
+	@Index
 	private String name;
 
 	public IdRef<Person> getId() {
