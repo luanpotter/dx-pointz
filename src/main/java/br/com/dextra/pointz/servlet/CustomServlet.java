@@ -9,8 +9,10 @@ import io.yawp.servlet.EndpointServlet;
 
 public class CustomServlet extends EndpointServlet {
 
-        @Override
-        protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	private static final long serialVersionUID = 5261454529072551474L;
+
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setHeader("Access-Control-Allow-Origin", "*");
 		super.service(req, resp);
 	}
