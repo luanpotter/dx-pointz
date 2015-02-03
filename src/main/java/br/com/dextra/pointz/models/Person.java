@@ -3,6 +3,7 @@ package br.com.dextra.pointz.models;
 import io.yawp.repository.IdRef;
 import io.yawp.repository.annotations.Endpoint;
 import io.yawp.repository.annotations.Id;
+import io.yawp.repository.annotations.Index;
 
 @Endpoint(path = "/people")
 public class Person {

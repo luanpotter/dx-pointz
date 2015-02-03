@@ -16,8 +16,12 @@ public class Transaction {
 	@Index
 	private IdRef<Person> personId;
 
+	@Index
 	private TransactionType type;
+
+	@Index
 	private Date date;
+
 	private String reference;
 
 	public IdRef<Person> getPerson() {
