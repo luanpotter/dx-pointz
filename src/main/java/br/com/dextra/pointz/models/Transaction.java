@@ -47,4 +47,25 @@ public class Transaction {
 	public String getReference() {
 		return reference;
 	}
+	
+	public void setId(IdRef<Transaction> id) {
+	    this.id = id;
+    }
+	
+	public void setDate(Date date) {
+	    this.date = date;
+    }
+	
+	public void setReference(String reference) {
+	    this.reference = reference;
+    }
+	
+	public void setPerson(IdRef<Person> personId) {
+	    this.personId = personId;
+    }
+	
+	public void setType(TransactionType type) {
+	    this.type = type;
+    }
+
 }

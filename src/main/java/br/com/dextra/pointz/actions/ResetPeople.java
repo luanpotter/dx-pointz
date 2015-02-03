@@ -1,8 +1,10 @@
-package br.com.dextra.pointz.models;
+package br.com.dextra.pointz.actions;
 
 import io.yawp.repository.IdRef;
 import io.yawp.repository.actions.Action;
 import io.yawp.repository.actions.annotations.PUT;
+import br.com.dextra.pointz.models.Person;
+import br.com.dextra.pointz.models.Transaction;
 
 public class ResetPeople extends Action<Person> {
 
